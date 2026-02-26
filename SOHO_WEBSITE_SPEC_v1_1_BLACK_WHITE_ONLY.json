@@ -1,0 +1,439 @@
+{
+  "project": "SOHO Website",
+  "version": "1.1",
+  "created_utc": "2026-02-26T04:18:28Z",
+  "principles": [
+    "Luxury minimal",
+    "Mobile-first vertical scroll",
+    "No clutter, no unnecessary overlays",
+    "Consistent typography, weight, and color across the entire site",
+    "Box mark used only as a seal (top-right header, bottom-left footer)"
+  ],
+  "brand_marks": {
+    "primary_wordmark": "SOHO (letterspaced logo acceptable: 'S O H O' when used as wordmark)",
+    "box_mark": {
+      "style": "Outline square, black stroke, white interior, black SOHO letters",
+      "usage_rules": [
+        "Header: top-right only",
+        "Footer: bottom-left only",
+        "Do not use box mark inside email pop-up",
+        "Do not place box mark centered or as a decorative element"
+      ]
+    }
+  },
+  "global_style": {
+    "colors": {
+      "background": "#FFFFFF",
+      "text_primary": "#000000",
+      "button_primary_bg": "#000000",
+      "button_primary_text": "#FFFFFF",
+      "divider": "rgba(0,0,0,0.12)",
+      "border": "rgba(0,0,0,0.12)"
+    },
+    "typography": {
+      "font_family": "Helvetica Neue, Neue Haas Grotesk, Inter, Arial, sans-serif",
+      "weights_allowed": [
+        "Regular",
+        "Medium",
+        "SemiBold"
+      ],
+      "weights_not_allowed": [
+        "Heavy Bold",
+        "Ultra Thin",
+        "Mixed families"
+      ],
+      "casing_rules": {
+        "navigation": "Title Case",
+        "section_headings": "Title Case",
+        "body_copy": "Sentence case",
+        "buttons": "Title Case",
+        "legal": "Sentence case",
+        "note": "Use capitals/lowercase only where appropriate; avoid random ALL CAPS."
+      }
+    },
+    "layout": {
+      "tone": "Clean white space, thin dividers, restrained styling",
+      "no_shadows": true,
+      "no_gradients": true,
+      "no_background_tints": true
+    }
+  },
+  "global_components": {
+    "primary_cta_button": {
+      "label": "Book Your Appointment",
+      "style": {
+        "background": "#000000",
+        "text_color": "#FFFFFF",
+        "width": "auto (based on text)",
+        "radius": "subtle (small)",
+        "shadow": "none"
+      },
+      "states": {
+        "hover_desktop": "subtle opacity change only",
+        "press_mobile": "simple press state, no animation"
+      },
+      "consistency_rule": "This button style remains constant across the entire website."
+    },
+    "dividers": {
+      "style": "1px line",
+      "color": "rgba(0,0,0,0.12)",
+      "note": "Black only with low opacity (still within black/white system)."
+    }
+  },
+  "header": {
+    "design_reference": "Tom Ford-inspired header logic",
+    "positioning": {
+      "logo_position": "top-right (box mark) always",
+      "menu_icon": "top-left (hamburger)",
+      "icons": "right aligned row under logo (Search, Bag)"
+    },
+    "background": "#FFFFFF",
+    "behavior": {
+      "scroll": "Hide on scroll down, return on scroll up",
+      "animation": "smooth, minimal; no bounce",
+      "hero_overlap": "Header remains a white bar over hero (not transparent)"
+    },
+    "mobile": {
+      "row_1": [
+        "MenuIconLeft",
+        "BoxMarkRight"
+      ],
+      "row_2_right_aligned": [
+        "SearchIcon",
+        "BagIcon"
+      ]
+    },
+    "desktop": {
+      "row_1": [
+        "MenuIconLeft",
+        "BoxMarkRight"
+      ],
+      "row_2_right_aligned": [
+        "NavLinksRightAligned",
+        "SearchIcon",
+        "BagIcon",
+        "PrimaryCTAButtonOptional"
+      ]
+    }
+  },
+  "navigation": {
+    "desktop_links_right_aligned": [
+      "Suits & Tuxedos",
+      "Made To Measure",
+      "Wedding",
+      "Ready To Wear",
+      "Journal",
+      "Stores"
+    ],
+    "mobile_menu": {
+      "presentation": "Slide panel from left (~80% width) or clean full overlay; keep minimal",
+      "style": "White background, clean list spacing, thin dividers between groups",
+      "groups": [
+        {
+          "title": "Shop",
+          "items": [
+            "Suits & Tuxedos",
+            "Made To Measure",
+            "Wedding",
+            "Ready To Wear"
+          ]
+        },
+        {
+          "title": "Explore",
+          "items": [
+            "Journal",
+            "Stores",
+            "Contact"
+          ]
+        },
+        {
+          "title": "Support",
+          "items": [
+            "Size Guides",
+            "Delivery",
+            "Returns"
+          ]
+        }
+      ],
+      "cta": {
+        "type": "Primary CTA Button",
+        "label": "Book Your Appointment",
+        "placement": "Bottom of menu"
+      }
+    }
+  },
+  "landing_page": {
+    "goal": "Brand-first, minimal, campaign-led; hero image leads with no overlay copy",
+    "structure_mobile_first": [
+      {
+        "type": "Hero",
+        "full_screen": true,
+        "image": "Campaign hero image (still, no parallax)",
+        "overlay_text": "none"
+      },
+      {
+        "type": "CopyBlock",
+        "background": "#FFFFFF",
+        "copy": [
+          "Soho Introduces \"New Formal\"",
+          "New Formal Campaign 2026",
+          "modern luxury aesthetic",
+          "Discover the collection"
+        ],
+        "notes": "Clean, readable, no clutter"
+      },
+      {
+        "type": "MadeToMeasureIntro",
+        "background": "#FFFFFF",
+        "copy": [
+          "Made To Measure",
+          "Your Wedding",
+          "Tailored"
+        ],
+        "cta": "Book Your Appointment",
+        "notes": "Section already approved; keep as-is"
+      },
+      {
+        "type": "No-ImageBoxGrid",
+        "background": "#FFFFFF",
+        "layout_desktop": "2 across, 2 rows",
+        "layout_mobile": "stacked full width",
+        "boxes": [
+          {
+            "heading": "New Formal 2026",
+            "sub": "A modern luxury aesthetic."
+          },
+          {
+            "heading": "Made To Measure",
+            "sub": "Precision. Structure. Authority."
+          },
+          {
+            "heading": "Your Wedding",
+            "sub": "Tailored for presence."
+          },
+          {
+            "heading": "Book An Appointment",
+            "sub": "Private fitting experience."
+          }
+        ],
+        "box_style": "Thin border (rgba(0,0,0,0.12)), white fill, generous padding, Title Case headings"
+      }
+    ],
+    "scroll_transitions": {
+      "hero_to_next_section": {
+        "type": "soft fade",
+        "duration_seconds": 0.3,
+        "notes": "No slide, no bounce, no zoom"
+      }
+    }
+  },
+  "made_to_measure_section": {
+    "positioning": "Premium point of difference; hero-led, no pricing",
+    "content_rule": "Hero looks are primary; images do the selling; text is minimal and readable",
+    "mobile_scroll_pattern": [
+      {
+        "type": "Image",
+        "text_overlay": "none"
+      },
+      {
+        "type": "WhiteTextFrame",
+        "copy": [
+          "Soho Introduces \"New Formal\"",
+          "New Formal Campaign 2026",
+          "modern luxury aesthetic",
+          "Discover the collection"
+        ]
+      },
+      {
+        "type": "HeroLooksTiles",
+        "layout": "2 across on mobile; 6 total; can be grouped as 2 then text then 2 then text then 2",
+        "text_on_images": "none"
+      },
+      {
+        "type": "CTAFrame",
+        "cta": "Book Your Appointment"
+      }
+    ],
+    "no_pricing": true
+  },
+  "suits_and_tuxedos": {
+    "status": "Approved/complete for now",
+    "layout_spec": {
+      "format": "A4 landscape print reference matching website look",
+      "structure": "2 items per page (jacket left, pant right) with equal panels; panels are WHITE with thin border; no colour swatches on listing pages; uppercase item names; price below; colours handled on PDP",
+      "notes": "Use the approved PDF as the locked base; only swap images as needed."
+    },
+    "product_sets": [
+      {
+        "name": "Barton Wool",
+        "items": [
+          "Jacket $499",
+          "Pant $249"
+        ],
+        "colours": [
+          "Blue",
+          "Black",
+          "Navy"
+        ]
+      },
+      {
+        "name": "Salter Linen Cotton",
+        "items": [
+          "Jacket $499",
+          "Pant $249"
+        ],
+        "colours": [
+          "Natural"
+        ]
+      },
+      {
+        "name": "Ford Wool",
+        "items": [
+          "Jacket $499",
+          "Pant $249"
+        ],
+        "colours": [
+          "Black",
+          "Navy"
+        ]
+      },
+      {
+        "name": "Tuxedo - Classic",
+        "items": [
+          "Jacket $599",
+          "Pant $299"
+        ],
+        "colours": [
+          "Black"
+        ]
+      },
+      {
+        "name": "Tuxedo - Shaw Collar",
+        "items": [
+          "Jacket $599 (Ivory)",
+          "Pant $299 (Black)"
+        ]
+      },
+      {
+        "name": "Tuxedo - Double Breasted",
+        "items": [
+          "Jacket $599 (Black)",
+          "Pant $299 (Ivory)"
+        ]
+      }
+    ]
+  },
+  "pdp_product_page": {
+    "listing_page_rule": "No color swatches on listing/grid pages",
+    "pdp_rule": "Color swatch appears above product name on PDP",
+    "sizes": {
+      "jacket": [
+        "36",
+        "38",
+        "40",
+        "42",
+        "44",
+        "46",
+        "48"
+      ],
+      "pant": [
+        "30",
+        "32",
+        "34",
+        "36",
+        "38"
+      ]
+    },
+    "size_ui": {
+      "type": "Dropdown",
+      "default_state": "Hidden until opened"
+    },
+    "recommendations": {
+      "label": "You Might Also Like",
+      "placement": "Bottom of PDP"
+    }
+  },
+  "email_popup": {
+    "purpose": "Mailing list signup (restrained)",
+    "trigger": {
+      "delay_seconds": "3-4",
+      "notes": "Do not trigger immediately on page load"
+    },
+    "design": {
+      "overlay": "Soft dark overlay, subtle",
+      "modal_bg": "#FFFFFF",
+      "logo_usage": "SOHO text only (no box mark)",
+      "close_icon": "Top right X",
+      "headline": "Join The Soho List",
+      "subtext": "Be the first to discover new collections, campaign releases and private appointments.",
+      "field": {
+        "label": "Email Address",
+        "type": "email"
+      },
+      "button": {
+        "label": "Subscribe",
+        "style": "Black bg, white text"
+      },
+      "legal": "By subscribing you agree to our Privacy Policy.",
+      "privacy_policy": "Underlined link"
+    },
+    "behavior": {
+      "animation": "Soft fade in (0.3–0.4s)",
+      "close_on_backdrop_click": true,
+      "frequency": {
+        "if_closed": "Do not show again for 14 days",
+        "if_subscribed": "Never show again"
+      }
+    }
+  },
+  "footer": {
+    "mobile": {
+      "layout": "2 columns + legal bar",
+      "links_left": [
+        "About",
+        "Journal",
+        "Contact",
+        "Stores",
+        "FAQs",
+        "Terms And Conditions",
+        "Follow Us"
+      ],
+      "links_right": [
+        "Size Guides",
+        "Delivery",
+        "Returns",
+        "Become A VIP",
+        "Careers",
+        "Privacy Policy"
+      ],
+      "style": {
+        "background": "#FFFFFF",
+        "dividers": "1px black line with low opacity (rgba(0,0,0,0.12))",
+        "typography": "Consistent site font"
+      }
+    },
+    "desktop": {
+      "layout": "Expanded width; same content; 3–4 columns; keep minimal",
+      "style": {
+        "background": "#FFFFFF",
+        "dividers": "1px black line with low opacity (rgba(0,0,0,0.12))",
+        "typography": "Same as mobile, just wider grid"
+      }
+    },
+    "legal_bar": {
+      "left": "Outline SOHO box mark",
+      "right": "© 2026 SOHO. All Rights Reserved.",
+      "note": "Box mark appears bottom-left only"
+    }
+  },
+  "notes": {
+    "do_not_do": [
+      "Do not place SOHO centered at bottom of hero",
+      "Do not overlay marketing text on product images in scroll-experience pages",
+      "Do not change button styling (must remain black with white text)",
+      "Do not add pricing to Made To Measure"
+    ],
+    "handoff_guidance": "Use this JSON as the single source of truth for building the website."
+  },
+  "updated_utc": "2026-02-26T06:17:45Z"
+}
